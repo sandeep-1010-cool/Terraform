@@ -1,231 +1,241 @@
-# Terraform with AWS - Complete Video Course 🚀
+# Terraform - Complete Learning Path 🚀
 
-Welcome to the comprehensive Terraform with AWS video course! This repository contains all code samples and documentation corresponding to each video lesson.
+Welcome to the comprehensive Terraform learning path! This repository contains structured lessons covering fundamental to advanced Terraform concepts, focusing on core principles that apply to any cloud provider.
 
 ## 🎯 Course Overview
-This course consists of video lessons covering basic to advanced Terraform concepts with AWS cloud, including hands-on projects and real-world scenarios.
+This learning path consists of structured lessons covering basic to advanced Terraform concepts, including hands-on theory and core principles that work across all cloud providers.
 
 ## 📋 Prerequisites
-- AWS free account or subscription
-- AWS Fundamentals
-- Visual Studio Code or preferred IDE
-- Git installed and working knowledge of it
-- Linux or Mac or WSL(Windows Subsystem for Linux)
-- Linux and Shell scripting
-- Basic understanding of YAML and JSON
-- Networking Fundamentals
-- IP Addressing
-- Docker and Kubernetes Fundamentals
+- Basic understanding of cloud computing concepts
+- Familiarity with command line interfaces
+- Understanding of YAML and JSON formats
+- Networking fundamentals
+- Git version control basics
 
-## 📚 Course Curriculum
+## 📚 Learning Path
 
 ### Module 1: Core Concepts
 
-#### Day1: Introduction to Terraform
+#### Day 1: Introduction to Terraform
 - Understanding Infrastructure as Code (IaC)
 - Why we need IaC
 - What is Terraform and its benefits
 - Challenges with the traditional approach
-- Terraform Workflow
+- Terraform Workflow (Write → Plan → Apply → Destroy)
 - Installing Terraform
-- [Code Sample](/lessons/day01/)
+- [Theory & Concepts](/lessons/day01/)
 
-#### Day2: Terraform Provider
-- Terraform Providers
-- Provider version v/s Terraform core version
-- Why version matters
-- Version constraints
-- Operators for versions
-- [Code Sample](/lessons/day02/)
+#### Day 2: Terraform Providers
+- Understanding Terraform Providers
+- Provider version vs Terraform core version
+- Why version management matters
+- Version constraints and operators
+- Provider configuration best practices
+- [Theory & Concepts](/lessons/day02/)
 
-#### Day3: VPC and S3 Bucket
-- Authentication and Authorization to AWS resources
-- Creating VPC
-- S3 bucket management
-- Understanding dependencies
-- [Code Sample](/lessons/day03/)
+#### Day 3: Resources and Data Sources
+- Understanding Terraform Resources
+- Resource lifecycle and dependencies
+- Data Sources and their purpose
+- Resource vs Data Source differences
+- Authentication and authorization concepts
+- [Theory & Concepts](/lessons/day03/)
 
-#### Day4: State file management - Remote Backend
-- How Terraform updates Infra
-- Terraform state file
+#### Day 4: State Management
+- How Terraform tracks infrastructure
+- Terraform state file concepts
 - State file best practices
-- Remote backend setup
-- State management
-- [Code Sample](/lessons/day04/)
+- Remote backend concepts
+- State management strategies
+- [Theory & Concepts](/lessons/day04/)
 
-#### Day5: Variables
-- Input variables
-- Output variables
-- Locals
-- Variable precedence
-- Variable files (tfvars)
-- [Code Sample](/lessons/day05/)
+#### Day 5: Variables and Outputs
+- Input variables and their types
+- Output variables and their purpose
+- Local values (locals)
+- Variable precedence rules
+- Variable files (tfvars) concepts
+- [Theory & Concepts](/lessons/day05/)
 
-#### Day6: File Structure
-- Terraform file organization
+#### Day 6: File Structure and Organization
+- Terraform file organization principles
 - Sequence of file loading
-- Best practices for structure
-- [Code Sample](/lessons/day06/)
+- Best practices for project structure
+- Module concepts introduction
+- [Theory & Concepts](/lessons/day06/)
 
-#### Video 7: Type constraints in Terraform
-- String, number, bool
-- Map, set, list, Tuple, Objects
-- [Code Sample](/lessons/day07/)
+#### Day 7: Type Constraints
+- String, number, boolean types
+- Complex types: map, set, list, tuple, object
+- Type validation and constraints
+- Type conversion concepts
+- [Theory & Concepts](/lessons/day07/)
 
-#### Video 8: Meta-arguments
-- Understanding count
-- for_each loop
-- for loop
-- Practical examples
-- [Code Sample](/lessons/day08)
+#### Day 8: Meta-arguments
+- Understanding count meta-argument
+- for_each loop concepts
+- for loop expressions
+- Meta-argument best practices
+- [Theory & Concepts](/lessons/day08/)
 
-#### Video 9: The Lifecycle meta-arguments
-- create before destroy
-- prevent destroy
-- ignore changes
-- replace triggered by
-- custom condition
-- [Code Sample](/lessons/day09)
+#### Day 9: Lifecycle Meta-arguments
+- create_before_destroy concept
+- prevent_destroy strategies
+- ignore_changes usage
+- replace_triggered_by
+- Custom condition lifecycle rules
+- [Theory & Concepts](/lessons/day09/)
 
-#### Video 10: Dynamic Blocks and expressions
-- Dynamic blocks
+#### Day 10: Dynamic Blocks and Expressions
+- Dynamic blocks concept
 - Conditional expressions
-- Splat Expressions
-- practical examples
-- [Code Sample](/lessons/day10)
+- Splat expressions
+- Advanced expression techniques
+- [Theory & Concepts](/lessons/day10/)
 
-#### Video 11: Functions in Terraform
-- Built-in functions
-- Practical examples
-- tasks for practice
-- [Code Sample](/lessons/day11)
+#### Day 11: Functions in Terraform
+- Built-in functions overview
+- String manipulation functions
+- Collection functions
+- Mathematical functions
+- [Theory & Concepts](/lessons/day11/)
 
-#### Video 12: Functions in Terraform(Continue..)
-- Built-in functions
-- Practical examples
-- tasks for practice
-- [Code Sample](/lessons/day12)
+#### Day 12: Advanced Functions
+- File and path functions
+- Encoding functions
+- Date and time functions
+- Type conversion functions
+- [Theory & Concepts](/lessons/day12/)
 
-#### Video 13: Data Sources
-- Using data sources
-- Practical examples
-- [Code Sample](/lessons/day13)
-  
-### Module 2: AWS resources using Terraform 
+#### Day 13: Data Sources Deep Dive
+- Data source concepts and usage
+- Cross-resource references
+- Data source best practices
+- Real-world data source scenarios
+- [Theory & Concepts](/lessons/day13/)
 
-#### Video 24: Static Website Hosting ( Mini Project 1 )
-- S3 static website hosting
-- CloudFront distribution
-- Route 53 DNS configuration
-- SSL/TLS certificate management
-- [Code Sample](/lessons/day14)
+### Module 2: Advanced Concepts
 
+#### Day 14: Modules
+- Module structure and organization
+- Module inputs and outputs
+- Module versioning
+- Module best practices
+- [Theory & Concepts](/lessons/day14/)
 
-#### Video 15: VPC and Peering ( Mini Project 2 )
-- Virtual Private Cloud Creation
-- VPC peering setup
-- [Code Sample](/lessons/day15)
+#### Day 15: Workspaces
+- Workspace concepts
+- Environment management
+- Workspace best practices
+- Multi-environment strategies
+- [Theory & Concepts](/lessons/day15/)
 
-#### Video 16: IAM Authentication ( Mini Project 3 )
-- Authentication methods
-- IAM roles and policies
-- Service accounts
-- [Code Sample](/lessons/day16)
+#### Day 16: Provisioners
+- What are provisioners
+- Local vs remote provisioners
+- File provisioners
+- Provisioner best practices
+- [Theory & Concepts](/lessons/day16/)
 
-#### Video 17: AWS Web Apps ( Mini Project 4 )
-- Elastic Beanstalk creation
-- Configuration
-- Deployment
-- [Code Sample](/lessons/day17)
+#### Day 17: Backend Configuration
+- Backend types and concepts
+- Remote state management
+- Backend configuration best practices
+- State locking concepts
+- [Theory & Concepts](/lessons/day17/)
 
-#### Video 18: AWS Lambda ( Mini Project 5 )
-- Lambda function setup
-- Configuration
-- [Code Sample](/lessons/day18)
-
-#### Video 19: Terraform Provisioners ( Mini Project 6 )
-- What are provisioners and their use case
-- Local vs remote vs file provisioners
-- Demo of all three provisioners
-- [Code Sample](/lessons/day19)
-
-#### Video 20: EKS Cluster ( Real-time Project 1)
-- Kubernetes cluster setup
-- EKS cluster with managed node groups
-- Custom module usage
-- Custom module creation for EKS, Secrets Manager, IAM etc
-- Networking and security configuration
-- [Code Sample](/lessons/day20)
-
-#### Video 21: AWS Policy and Governance ( Mini Project 7 )
-- Policy creation
-- Governance setup
-- [Code Sample](/lessons/day21)
-
-#### Video 22: RDS Database ( Mini Project 8 )
-- Database creation
-- Configuration
-- [Code Sample](/lessons/day22)
-
-#### Video 23: AWS Monitoring ( Mini Project 9 )
-- CloudWatch metrics alerts
-- SNS topics
-- CloudWatch logs
-- Log alerts
-- [Code Sample](/lessons/day23)
-
-#### Video 24: High available/scalable Infrastructure Deployment ( Mini Project 10 )
-
-- Creating EC2 Instances
-- Auto Scaling Groups
-- Security Groups
-- Application Load Balancer, NAT Gateway, Elastic IP, Auto Scaling rules etc
-- [Code Sample](/lessons/day24)
-
-### Module 3: Advanced Concepts
-
-#### Video 25: Terraform Import (Real-time project 2)
-- Different ways of importing AWS resource to Terraform
-- Terraform Import
-- Importing a live infrastructure to Terraform using Terraform Import
-- AWS Config
-- Importing a live infrastructure to Terraform using AWS Config
-- Terraformer
-- [Code Sample](/lessons/day25)
-
-#### Video 26: Terraform Cloud and Workspaces
-- Cloud setup
+#### Day 18: Terraform Cloud
+- Terraform Cloud concepts
 - Workspace management
-- [Code Sample](/lessons/day26)
+- Team collaboration features
+- Policy as Code introduction
+- [Theory & Concepts](/lessons/day18/)
 
-#### Video 27: AWS DevOps with Terraform (Real-time project 3)
-- CI/CD pipeline setup
-- Automation
-- [Code Sample](/lessons/day27)
+#### Day 19: Security Best Practices
+- Secrets management
+- IAM and authentication concepts
+- Security scanning
+- Compliance considerations
+- [Theory & Concepts](/lessons/day19/)
 
+#### Day 20: Testing and Validation
+- Terraform testing strategies
+- Validation concepts
+- Testing frameworks
+- Quality assurance practices
+- [Theory & Concepts](/lessons/day20/)
 
-#### Video 28: 3-Tier Architecture (Real-time project 5)
-- Complete architecture setup
-- Web tier, Application tier, Database tier
-- Load balancing and auto-scaling
-- Best practices
-- [Code Sample](/lessons/day29)
+### Module 3: Real-World Scenarios
 
-#### Video 29: GitOps with Terraform (Real-time project 4)
+#### Day 21: Infrastructure Patterns
+- Common infrastructure patterns
+- Multi-tier architecture concepts
+- High availability patterns
+- Scalability patterns
+- [Theory & Concepts](/lessons/day21/)
 
-- GitOps workflow implementation
-- ArgoCD setup with Terraform
-- Git-based infrastructure management
-- Automated deployments
-- [Code Sample](/lessons/day30)
+#### Day 22: GitOps with Terraform
+- GitOps workflow concepts
+- Infrastructure as Code workflows
+- Automated deployment strategies
+- Version control best practices
+- [Theory & Concepts](/lessons/day22/)
 
+#### Day 23: CI/CD Integration
+- Continuous Integration concepts
+- Deployment automation
+- Pipeline strategies
+- Integration best practices
+- [Theory & Concepts](/lessons/day23/)
 
-### Video 0: Terrafrom Drift Detection using Terraform Cloud
-- Drift detection setup
-- Monitoring infrastructure changes
-- [Code Sample](/lessons/day31)
+#### Day 24: Monitoring and Observability
+- Infrastructure monitoring concepts
+- Logging strategies
+- Alerting and notification
+- Observability best practices
+- [Theory & Concepts](/lessons/day24/)
 
+#### Day 25: Disaster Recovery
+- Backup and recovery concepts
+- Multi-region strategies
+- Disaster recovery planning
+- Business continuity
+- [Theory & Concepts](/lessons/day25/)
 
+#### Day 26: Cost Optimization
+- Infrastructure cost management
+- Resource optimization strategies
+- Cost monitoring and alerting
+- Budget management concepts
+- [Theory & Concepts](/lessons/day26/)
+
+#### Day 27: Compliance and Governance
+- Policy as Code concepts
+- Compliance frameworks
+- Governance strategies
+- Audit and reporting
+- [Theory & Concepts](/lessons/day27/)
+
+#### Day 28: Migration Strategies
+- Infrastructure migration concepts
+- Lift and shift strategies
+- Blue-green deployment
+- Migration planning
+- [Theory & Concepts](/lessons/day28/)
+
+#### Day 29: Performance Optimization
+- Infrastructure performance concepts
+- Resource optimization
+- Caching strategies
+- Performance monitoring
+- [Theory & Concepts](/lessons/day29/)
+
+#### Day 30: Advanced Patterns
+- Microservices infrastructure
+- Serverless patterns
+- Container orchestration concepts
+- Advanced networking patterns
+- [Theory & Concepts](/lessons/day30/)
 
 ## 📂 Repository Structure
 ```
@@ -233,22 +243,32 @@ This course consists of video lessons covering basic to advanced Terraform conce
 │   ├── day01/
 │   ├── day02/
 │   └── ...
-├── docs/
-│   ├── setup.md
-│   └── troubleshooting.md
+├── install/
+│   └── README.md
 └── README.md
 ```
 
-## 🎓 Learning Path
-1. Follow videos in sequence
-2. Complete hands-on exercises
-3. Implement projects
-4. Practice with provided code samples
+## 🎓 Learning Approach
+1. **Theory First**: Understand core concepts before practical implementation
+2. **Provider Agnostic**: Learn principles that apply to any cloud provider
+3. **Progressive Learning**: Build knowledge step by step
+4. **Best Practices**: Focus on industry-standard approaches
 
-## 📝 License
+## 📝 Key Learning Outcomes
+- Master Terraform core concepts and syntax
+- Understand Infrastructure as Code principles
+- Learn version control and state management
+- Grasp advanced Terraform features and patterns
+- Apply best practices for production environments
+
+## 🔗 Additional Resources
+- [Terraform Documentation](https://www.terraform.io/docs)
+- [Terraform Registry](https://registry.terraform.io/)
+- [Terraform Best Practices](https://www.terraform.io/docs/cloud/guides/recommended-practices/index.html)
+
+## 📄 License
 MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔗 Resources
-- [Terraform Documentation](https://www.terraform.io/docs)
-- [AWS Documentation](https://docs.aws.amazon.com/)
-- [Course Support Forum]()
+---
+
+*Ready to master Terraform concepts and become an Infrastructure as Code expert! 🚀*
